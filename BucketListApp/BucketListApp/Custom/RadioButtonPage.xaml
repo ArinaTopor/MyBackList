@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BucketListApp.Custom.RadioButtonPage">
+    <ContentPage.Resources>
+        <ControlTemplate x:Key="OverrideRadioButton">
+            <Frame Padding="0" BorderColor="#2B79E1" CornerRadius="15" VerticalOptions="Start"
+               HeightRequest="100" WidthRequest="100" HorizontalOptions="Start">
+
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CheckedStates">
+                        <VisualState x:Name="Checked">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#2B79E1"/>
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="Unchecked">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#f3f2f1"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+
+                <Grid Margin="4" WidthRequest="100">
+                    <ContentPresenter/>
+                </Grid>
+            </Frame>
+        </ControlTemplate>
+    </ContentPage.Resources>
+</ContentPage>

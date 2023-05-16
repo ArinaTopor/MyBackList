@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:BucketListApp"
+             x:Class="BucketListApp.CreateGoalPage"
+             IconImageSource="add"
+             Title="Добавить цель">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="18, 20, 18, 18">
+                <StackLayout VerticalOptions="Start">
+                    <Label Text="Название" FontSize="12" TextColor="Black" VerticalOptions="StartAndExpand" ></Label>
+                    <custom:CustomEntry
+                                ClearButtonVisibility="WhileEditing"
+                                Keyboard="Text"
+                                x:Name="Name"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Placeholder="Конкретная и измеримая цель"
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                    <Label Text="Категория" FontSize="12" TextColor="Black" VerticalOptions="StartAndExpand"></Label>
+                    <Button x:Name="ButCat" BackgroundColor="#FFF3E2" Text="Выбрать категорию"
+                    FontSize="12" TextTransform="None" TextColor="Black" FontAttributes="Bold"
+                    HeightRequest="61" WidthRequest="345"
+                    CornerRadius="10" BorderColor="Black" Clicked="Cat"/>
+                    <Label Text="Описание" FontSize="12" TextColor="Black" VerticalOptions="StartAndExpand"></Label>
+                    <custom:CustomEntry
+                                ClearButtonVisibility="WhileEditing"
+                                Keyboard="Text"
+                                x:Name="About"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Placeholder="Почему эта цель важна для вас?"
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                    <Label Text="Подзадачи" FontSize="12" TextColor="Black" VerticalOptions="StartAndExpand"></Label>
+                    <custom:CustomEntry
+                                Placeholder="Подзадача 1"
+                                TextChanged="Pod1Ch"
+                                ClearButtonVisibility="WhileEditing"
+                                Keyboard="Text"
+                                x:Name="Pod1"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Text=""
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand">
+                        <custom:CustomEntry.Behaviors EventName="Unfocused" 
+                                                      Command="{Binding EntryUnfocused}">
+                        </custom:CustomEntry.Behaviors>
+                    </custom:CustomEntry>
+                    <custom:CustomEntry
+                                Placeholder="Подзадача 2"
+                                TextChanged="Pod2Ch"
+                                ClearButtonVisibility="WhileEditing"
+                                IsVisible="False"
+                                Keyboard="Text"
+                                x:Name="Pod2"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Text=""
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                    <custom:CustomEntry
+                                Placeholder="Подзадача 3"
+                                TextChanged="Pod3Ch"
+                                ClearButtonVisibility="WhileEditing"
+                                IsVisible="False"
+                                Keyboard="Text"
+                                x:Name="Pod3"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Text=""
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                    <custom:CustomEntry
+                                Placeholder="Подзадача 4"
+                                TextChanged="Pod4Ch"
+                                ClearButtonVisibility="WhileEditing"
+                                IsVisible="False"
+                                Keyboard="Text"
+                                x:Name="Pod4"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Text=""
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                    <custom:CustomEntry
+                                Placeholder="Подзадача 5"
+                                TextChanged="Pod5Ch"
+                                ClearButtonVisibility="WhileEditing"
+                                IsVisible="False"
+                                Keyboard="Text"
+                                x:Name="Pod5"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Text=""
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                    <custom:CustomEntry
+                                Placeholder="Подзадача 6"
+                                ClearButtonVisibility="WhileEditing"
+                                IsVisible="False"
+                                Keyboard="Text"
+                                x:Name="Pod6"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="Black"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Text=""
+                                PlaceholderColor="Black"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+                    <Button BackgroundColor="#FBAB57" Text="Создать задачу" 
+                    FontSize="18" TextColor="Black" FontAttributes="Bold"
+                    HeightRequest="61" WidthRequest="345" 
+                    CornerRadius="10" Clicked="NewGoal"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

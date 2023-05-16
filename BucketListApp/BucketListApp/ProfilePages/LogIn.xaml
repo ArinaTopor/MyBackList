@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:custom="clr-namespace:BucketListApp" xmlns:svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:DataType="custom:CustomEntry"
+             x:Class="BucketListApp.LogIn"
+             BackgroundColor="#FFF3E2">
+    <ContentPage.Content>
+        <StackLayout Padding="18, 0, 18, 18">
+            <StackLayout >
+                <Grid>
+                <RelativeLayout>
+                    <svg:SvgCachedImage
+                Source="profile.svg"
+                WidthRequest="18"
+                HeightRequest="25"
+                Margin="0, 0, 0, 42"
+                HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Вход" 
+                           FontSize ="18" 
+                           TextColor="Black"
+                           FontAttributes="Bold" 
+                           Margin ="0, 20, 0, 20"
+                           />
+                </RelativeLayout>
+                </Grid>
+                <svg:SvgCachedImage
+                Source="profile.svg"
+                WidthRequest="90"
+                HeightRequest="90"
+                Margin="0, 0, 0, 42"
+                HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Логин" FontSize="12" TextColor="Black" VerticalOptions="StartAndExpand" ></Label>
+                <custom:CustomEntry
+                                x:Name="login"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="#FBAB57"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Placeholder="Введите логин"
+                                PlaceholderColor="#FBAB57"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"/>
+
+                <Label Text="Пароль" FontSize="12" TextColor="Black" VerticalOptions="StartAndExpand"></Label>
+                <custom:CustomEntry
+                                x:Name="password1"
+                                CornerRadius="10"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="#FBAB57"    
+                                HorizontalTextAlignment="Start"
+                                FontSize="12"
+                                HeightRequest="50"
+                                Placeholder="Введите пароль"
+                                PlaceholderColor="#FBAB57"
+                                TextColor="Black"
+                                Margin="0, 0, 0, 8"
+                                VerticalOptions="StartAndExpand"
+                                IsPassword="True"/>
+                <Button BackgroundColor="#FBAB57" Text="Вход" 
+                    FontSize="18" TextColor="Black" FontAttributes="Bold"
+                    HeightRequest="61" WidthRequest="345" 
+                    CornerRadius="10"
+                    Clicked="Enter"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+                <Label Text="Еще нет аккаунта?" TextColor="#868686" Opacity="0.8" HorizontalOptions="Center"/>
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Зарегистрироваться" TextColor="Black" TextDecorations="Underline"></Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

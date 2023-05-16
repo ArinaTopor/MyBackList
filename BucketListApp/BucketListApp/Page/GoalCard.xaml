@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="BucketListApp.GoalCard"
+    BackgroundColor="#FFF3E2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="24, 18, 24, 18">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="goBack.png" 
+                             HeightRequest="18.47" 
+                             WidthRequest="25.87" 
+                             BackgroundColor="#FFF3E2"
+                             Grid.Column="0"
+                             HorizontalOptions="StartAndExpand"
+                             Clicked="RetutnToGoalsPage"/>
+                <Label Text="Цель" 
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="20" 
+                       Grid.Column="1" 
+                       HorizontalOptions="Center"/>
+                <ImageButton Source ="edit.png" 
+                             HeightRequest="28" 
+                             WidthRequest="25.61" 
+                             Grid.Column="2" 
+                             BackgroundColor="#FFF3E2"
+                             HorizontalOptions="EndAndExpand"/>
+            </Grid>
+            <Frame BackgroundColor="#1E1E1E" CornerRadius="30" VerticalOptions="FillAndExpand" Margin="0, 0, 0, -30">
+                <StackLayout Margin="24, 12, 24, 18">
+
+                    <Button Text="Завершить цель" 
+                            TextColor="White" 
+                            FontAttributes="Bold" 
+                            FontSize="18" 
+                            WidthRequest="343" 
+                            HeightRequest="56"
+                            BackgroundColor="#FBAB57"
+                            CornerRadius="10"
+                            VerticalOptions="EndAndExpand"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

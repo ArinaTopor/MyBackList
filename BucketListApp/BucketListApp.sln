@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BucketListApp.Android", "BucketListApp.Android\BucketListApp.Android.csproj", "{6665D185-C5F0-4FCB-872F-5680EC99ABFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BucketListApp", "BucketListApp\BucketListApp.csproj", "{224460E4-58FE-4038-93D3-5B6602A85160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6665D185-C5F0-4FCB-872F-5680EC99ABFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6665D185-C5F0-4FCB-872F-5680EC99ABFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6665D185-C5F0-4FCB-872F-5680EC99ABFD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6665D185-C5F0-4FCB-872F-5680EC99ABFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6665D185-C5F0-4FCB-872F-5680EC99ABFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6665D185-C5F0-4FCB-872F-5680EC99ABFD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{224460E4-58FE-4038-93D3-5B6602A85160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224460E4-58FE-4038-93D3-5B6602A85160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224460E4-58FE-4038-93D3-5B6602A85160}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{224460E4-58FE-4038-93D3-5B6602A85160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224460E4-58FE-4038-93D3-5B6602A85160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224460E4-58FE-4038-93D3-5B6602A85160}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DDF237E-C000-48AA-A635-B2724CF9AE2F}
+	EndGlobalSection
+EndGlobal

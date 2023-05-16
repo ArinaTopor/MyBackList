@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
+             x:Class="BucketListApp.ProfilePage"
+             xmlns:local1="clr-namespace:BucketListApp"
+             IconImageSource="medal"
+             Title="Прогресс">
+    <ContentPage.Content>
+        <StackLayout Padding="18, 0, 18, 18" HorizontalOptions="Center">
+            <Label Text="Прогресс" FontSize="18" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" 
+                   Margin ="0, 20, 0, 40" 
+                   HorizontalOptions="Center"
+                   FontFamily="Inter"/>
+            <StackLayout>
+                <Grid VerticalOptions="CenterAndExpand" Margin="18, 48, 18, 32">
+                    <control:ProgressRing HeightRequest="260" 
+                                  WidthRequest="260" 
+                                  RingProgressColor="#FBAB57"
+                                  RingBaseColor="#FFE6C2"
+                                  RingThickness="25"
+                                  Progress="0"></control:ProgressRing>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Label Text="{}%" HorizontalOptions="CenterAndExpand" 
+                               FontSize="48" 
+                               TextColor="Black" 
+                               FontAttributes="Bold"
+                               FontFamily="Inter"/>
+                        <Label Text="{}" HorizontalOptions="CenterAndExpand" FontSize="16"/>
+                    </StackLayout>
+                </Grid>
+                <StackLayout>
+                    <Grid HorizontalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0" 
+                               Text="{}" 
+                               TextColor="Black" 
+                               FontSize="36" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="CenterAndExpand"/>
+                        <Label Grid.Row="1" Grid.Column="0"    
+                               Text="    Целей &#10;выполнено &#10;    за год"  
+                               FontSize="14"
+                               FontFamily="Inter"
+                               HorizontalOptions="CenterAndExpand"/>
+
+                        <Label Grid.Column="1" Grid.Row="0" 
+                               Text="{}" 
+                               TextColor="Black" 
+                               FontSize="36" 
+                               FontAttributes="Bold"  
+                               HorizontalOptions="CenterAndExpand" />
+                        <Label Grid.Row="1"  Grid.Column="1"    
+                               Text="{}"  
+                               HorizontalOptions="CenterAndExpand"/>
+                    </Grid>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
