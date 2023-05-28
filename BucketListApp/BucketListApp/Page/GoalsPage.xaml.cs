@@ -2,16 +2,21 @@
 using BucketListApp.Page;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Xaml.Diagnostics;
 
 namespace BucketListApp
 {
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GoalsPage : ContentPage
     {
@@ -26,7 +31,7 @@ namespace BucketListApp
                 GoalList.AddCustomGoal(arg.Title, arg.Description, arg.Category, arg.SubTasks);
             });
 
-            BindingContext = this;
+            BindingContext = GoalList;
             //goalList = new GoalList();
             //goals = new List<Goal>();
             //MessagingCenter.Subscribe<CreateGoalPage, Goal>(this, "AddGoal", (sender, arg) =>

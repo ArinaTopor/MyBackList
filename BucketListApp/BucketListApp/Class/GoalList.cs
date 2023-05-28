@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
@@ -7,15 +9,15 @@ namespace BucketListApp.Class
 {
     public class GoalList
     {
-        private List<Goal> goals;
+        public ObservableCollection<Goal> goals { get; set; }
 
         public GoalList(IEnumerable<Goal> goals)
         {
-            this.goals = goals.ToList();
+            //this.goals = goals.ToList();
         }
         public GoalList()
         {
-            goals = new List<Goal>();
+            goals = new ObservableCollection<Goal>();
         }
         public void AddCustomGoal(string title, string descript, Category category, List<SubTask> subTasks)
         {
